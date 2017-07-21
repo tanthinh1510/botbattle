@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Page1.qml</file>
+        <file>Page1Form.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>qml/MainPage.qml</file>
+        <file>qml/VListDevice.qml</file>
+        <file>qml/VSearchDevice.qml</file>
+        <file>qml/VTextStyle.qml</file>
+        <file>qml/FlatButton.qml</file>
+        <file>qml/PaperRipple.qml</file>
+        <file>qml/PaperShadow.qml</file>
+        <file>images/add.png</file>
+        <file>images/bluetooth.png</file>
+        <file>images/clear.png</file>
+        <file>images/rssi.png</file>
+        <file>images/search.png</file>
+        <file>images/setting.png</file>
+        <file>images/user.png</file>
+    </qresource>
+</RCC>
