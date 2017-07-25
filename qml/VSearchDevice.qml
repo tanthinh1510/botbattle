@@ -29,7 +29,11 @@ Item {
         }
         onDevice_connect:{
             connect_status = _status
-
+            if(_status){
+                stackView.push(controlpanel)
+                _bleManager.scanBLE(false)
+            }
+            else stackView.pop()
 
         }
     }

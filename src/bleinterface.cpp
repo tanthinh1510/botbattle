@@ -160,6 +160,7 @@ void BLEInterface::connectCurrentDevice(QString _address)
             this, SLOT(onDeviceDisconnected()));
 
     m_control->connectToDevice();
+    qDebug() << "connect to device";
 }
 
 void BLEInterface::onDeviceConnected()

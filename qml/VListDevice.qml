@@ -128,8 +128,8 @@ Rectangle {
                 bgcolor: "#000000"
                 text_size: 25 *size_scale
                 width: 140*size_width
-                onClicked: {
-
+                onClicked: {                   
+                    _bleManager.connect_to_device(address)
                 }
 
             }

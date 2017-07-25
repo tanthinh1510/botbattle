@@ -33,39 +33,9 @@ void BLEmanager::send_command_direct_to_device(unsigned char _value)
 
 void BLEmanager::send_command_speed_to_device(unsigned char _value,unsigned char _speed)
 {
-    qDebug() << "direct" << _value;
-    if(_value == 48){
-
-        unsigned char datapass[] = {0x00,_speed};
+        unsigned char datapass[] = {_value,_speed};
         int size = sizeof(datapass);
         m_bleInterface->write(QByteArray((char*)datapass,size));
-    }
-    else if(_value == 49){
-
-        unsigned char datapass[] = {0x01,_speed};
-        int size = sizeof(datapass);
-        m_bleInterface->write(QByteArray((char*)datapass,size));
-    }
-    else if(_value == 50){
-
-        unsigned char datapass[] = {0x02,_speed};
-        int size = sizeof(datapass);
-        m_bleInterface->write(QByteArray((char*)datapass,size));
-    }
-    else if(_value == 51){
-
-        unsigned char datapass[] = {0x03,_speed};
-        int size = sizeof(datapass);
-        m_bleInterface->write(QByteArray((char*)datapass,size));
-    }
-    else if(_value == 52){
-
-        unsigned char datapass[] = {0x04,_speed};
-        int size = sizeof(datapass);
-        m_bleInterface->write(QByteArray((char*)datapass,size));
-    }
-
-
 }
 
 void BLEmanager::scanBLE(bool _status)

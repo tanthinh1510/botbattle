@@ -5,6 +5,7 @@ import QtQuick.Window 2.2
 import "qml"
 
 ApplicationWindow {
+    id: mainwindows
     visible: true
     width: 480
     height: 720
@@ -14,7 +15,7 @@ ApplicationWindow {
     property double size_scale: (size_width + size_height) / 2
 
     StackView {
-        id: swipeView
+        id: stackView
         anchors.fill: parent
         initialItem: MainPage{
 
@@ -22,4 +23,12 @@ ApplicationWindow {
 
 
     }
+    Component{
+        id: controlpanel
+        VUser{
+            width: mainwindows.width
+            height: mainwindows.height
+        }
+    }
+
 }
